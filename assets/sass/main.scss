@@ -1,15 +1,17 @@
 @import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "reset";
 @import "variables";
+@import "grid";
+@import "content-area";
+
+
 *{
   box-sizing: border-box;
 }
-html { 
-  
-}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background: $lightGray;
+  background: $lightGraybg;
 }
 
 #sideMenu{
@@ -24,7 +26,7 @@ body {
     padding-top:100px;
     a{
       display: block;
-      color:$darkGray;
+      color:$darkGrayBG;
       text-decoration: none;
       padding:15px 30px;
       font-weight: 300;
@@ -40,7 +42,7 @@ body {
         
       }
       .far, .fas{
-        color:$darkGray;
+        color:$darkGrayBG;
         font-size:1.4rem;
         margin-right: 0.8rem;
         display: inline-block;
@@ -72,7 +74,7 @@ header{
   width:50%;
 
 .far,.fas{
-  color:$darkGray;
+  color:$darkGrayBG;
 }
 input[type="text"]{
   background:transparent;
@@ -82,17 +84,17 @@ input[type="text"]{
   padding:10px;
   font-weight: 100;
   width:80%;
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease-in-out;
 &:hover{
-  background-color:$lightGray;
+  background-color:$lightGraybg;
 }
 
 }
 }
 
 .user-area{
-  display: inline-block;
-  float:right;
+
+float:right;
   padding:10px;
   a{
     color:black;
@@ -145,5 +147,5 @@ input[type="text"]{
 }}
 textarea:focus,input:active,input:focus{
   outline:none;
-  background-color: $lightGray;
+  background-color: $lightGraybg;
 }
